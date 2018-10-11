@@ -7,8 +7,8 @@ div {
    min-height:200px;
    min-width: 200px;
    border-radius:1em;
-    padding:1em;
-    box-sizing:border-box;
+   margin:1em;
+   box-sizing:border-box;
 }
 
 div#bubble1 {
@@ -90,6 +90,7 @@ div#bubble6 {
     width:70%;
     background-color: white;
     float:left;
+	margin:0;
 }
 
 div#robotinsert {
