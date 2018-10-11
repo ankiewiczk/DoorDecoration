@@ -1,6 +1,7 @@
 
 body {
     background-color: aquamarine;
+    height:100%;
 }
 div { 
    min-height:200px;
@@ -64,12 +65,19 @@ div#bubble4 {
 
 div#bottomhalf {
     clear:both;
+    height:50vh;
 }
 
 div#bubble5 {
     width:60%;
     float:left;
     background-color:white;
+}
+
+div#bottomsidebar {
+    float:right;
+    height:100%;
+    background-color:yellow;
 }
 
 div#bubble6container {
@@ -91,10 +99,5 @@ div#robotinsert {
     float:left;
 }
 
-div#bottomsidebar {
-    float:right;
-    height:100%;
-    background-color:yellow;
-}
 
 /* End of Overview of layout. */
