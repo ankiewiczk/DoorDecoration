@@ -1,12 +1,12 @@
-
+/*Worked on by Jrobles*/
 /* whole bubble */
-.container{
+#bubble1 {
 	
 }
 
 
 /* Power button pic div */
-div#powerButton {
+#bubble1 div#powerButton {
 border-radius: 50%;
 }
 
@@ -17,7 +17,7 @@ border-radius: 50%;
 
 
 /* #1 bubble */
-.num1 {
+i#num1 {
 	
 	
 }
