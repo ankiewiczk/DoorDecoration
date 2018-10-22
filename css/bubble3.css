@@ -1,0 +1,43 @@
+/*Overall bubble*/
+#b3 {
+	width: 1000px;
+	height: 750px;
+	padding: 50px;
+	border: 1px solid black;
+ }
+
+/*Number inside bubble*/
+#b3 i { }
+/*paragraph at top of circle*/
+#b3 p {text-align: center; }
+
+/*button*/
+#b3 button { 
+border-radius: 50%;
+background-color: #4CAF50; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+	float: left;
+
+}
+	
+/*Left Image*/
+#b3 div .left { 
+
+}
+/*Right Image*/
+#b3 div .right {
+
+ }
+
+/* back */
+#back {display:none;}
+
+/* paragraph */
+#back p { }
+/* Right image */
+#back  { }
