@@ -1,12 +1,62 @@
 
 #sidebar {
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
     height:100%;
 }
 #sidebar h1    { }
 
-#sidebar #sub1front { } 
-#sidebar #sub1back { } 
+div { 
+    width:200px;
+    height:200px;
+}
+
+#sidebar #sub1frontcopy {
+    position:absolute;
+    margin-left:200px;
+}
+
+#sidebar #flip1 {
+    position:absolute;
+    margin-left: 200px;
+    transform-origin: 50% center 0;
+    transform-style: preserve-3d;
+    transition: all 2.0s linear;
+}
+
+#sidebar #sub1front { 
+    position:absolute;
+    background-color:green;}
+
+#sidebar #sub1back { 
+    position:absolute;
+    background-color:red;
+    transform:rotateY(180deg);
+    backface-visibility: hidden;
+} 
+
+#flipswitch { 
+    position: relative;
+}
+
+.talkbubble { 
+    position:relative;
+    background:#f3961c;
+    border-radius: 10px;
+    border-color:#f3961c;
+    border-style:solid;
+    float:left;
+}
+
+.talkbubble::after {
+  content:"";
+  position:absolute;
+  bottom:-50px; /* value = - border-top-width - border-bottom-width */
+  left:0px; /* controls horizontal position */
+  border-width:50px 10px 0; /* vary these values to change the angle of the vertex */
+  border-style:solid;
+  border-color:#f3961c transparent;
+}/* */
+
 
 #sidebar #sub2front { } 
 #sidebar #sub2back { } 
