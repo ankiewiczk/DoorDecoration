@@ -24,6 +24,22 @@ background-color: #4CAF50;
 	float: left;
 
 }
+#b3 #panel {
+position:absolute;
+    margin-left: 200px;
+    /* first  value controls where y axis is.
+       second value controls where x axis is.*/
+    transform-origin: right center 0;
+    transform-style: preserve-3d;
+    transition: all 2.0s linear;
+}
+#b3 #front {
+position:absolute;
+    background-color:green;
+	width: 400px;
+	height: 240px;
+	backface-visibility: hidden;
+}
 	
 /*Left Image*/
 #b3 div .left { 
@@ -35,9 +51,13 @@ background-color: #4CAF50;
  }
 
 /* back */
-#back {display:none;}
+#back {
+position:absolute;
+    background-color:red;
+    transform:rotateY(180deg);
+    backface-visibility: hidden;
+}
 
 /* paragraph */
 #back p { }
 /* Right image */
-#back  { }
