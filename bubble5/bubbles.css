@@ -1,3 +1,34 @@
+#bubble5 {
 rotate 30px;
 rotate 40px;
 translate 30px;
+height 487px;
+border: 3x solid blue;}
+/* help me*/
+
+#happyrobot {
+ rotate 30px;
+rotate 40px;
+translate 30px;
+height 487px;
+border: 3x solid blue;}   
+
+#book {
+    translate 30px;
+    width: 50px;
+}
+  
+#front {
+    transform: matrix(67)
+        
+}
+
+#back {
+    align-content: 
+    translate 20px;
+    
+}
+
+#under {
+    rotate 20px;
+}
