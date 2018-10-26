@@ -1,0 +1,97 @@
+div {
+    padding:10px;
+    width:300px;
+    height:300px;
+    border-radius:5px;
+}
+
+#flipPanel {
+    position:absolute;
+    margin-left: 200px;
+    /* first  value controls where y axis is.
+       second value controls where x axis is.*/
+    transform-origin: left bottom 0;
+    transform-style: preserve-3d;
+    transition: all 2.0s linear;
+}
+.circle {
+    border-radius: 50%;
+    border-color:red;
+    border-style:solid;
+    border-width:2px;
+    padding:4px;
+}
+
+img { 
+    min-width:50px;
+    min-height:50px; 
+}
+
+#frontPart { 
+    position:absolute;
+    background-color: #ff8566;}
+
+#backPart { 
+    position:absolute;
+    background-color:red;
+    transform:rotateY(180deg);
+    backface-visibility: hidden;
+} 
+
+body {
+    background-color: #00b8e6;
+}
+
+.greenTalkingBubble.right {
+    margin-right: 40px;
+    background: #66cc00;
+}
+
+.greenTalkingBubble {
+    bottom: 30px;
+    width: 130px;
+    height: 70px;
+    position: relative;
+    padding: 5px;
+    margin: 1em 0 3em;
+    background: #66cc00;
+    border-radius: 10px;
+    z-index:2;
+}
+/*
+.greenTalkingBubble:after {
+    content: "";
+    position: absolute;
+    bottom: 60px;
+    left: 134px;
+    border-width: 20px 0 0 20px;
+    border-style: solid;
+    border-color: #66cc00 transparent;
+    display: block;
+    width: 0;
+}
+/* */
+.greenTalkingBubble:before{
+    content: "";
+    position: absolute;
+    z-index:1;
+    top:-30px;
+    right: 0px;
+    height: 30px;
+    border-right: 60px solid #66cc00;
+    border-top-left-radius: 80px 50px;
+    background: #66cc00;
+}
+/* */
+
+.greenTalkingBubble:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+    right: 0px;
+    width: 
+    height: 30px;
+
+
+}
