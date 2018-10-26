@@ -1,14 +1,15 @@
 window.onload = loadDocument;
 
 function loadDocument(e) {
-    var switchEL = document.getElementById("button");
-    switchEL.onclick = flipIt;
-    var panelEL = document.getElementById("panel");
+	
+    var switchEL = document.getElementById("buttonb3");
+    switchEL.onclick = flipb3;
+    var panelEL = document.getElementById("b3flap");
     panelEL.flipped = false;
 }
 
-function flipIt(e) { 
-    var panelEL = document.getElementById("panel");
+function flipb3(e) { 
+    var panelEL = document.getElementById("b3flap");
 
     if(!panelEL.flipped)  
     {    panelEL.style.transform = "rotateY(-180deg)";

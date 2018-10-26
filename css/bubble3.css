@@ -2,13 +2,14 @@
 #b3 {
 position:relative;
 	padding: 5px;
-	border: 8px solid blue;
+	border: 8px solid green;
 	background-color: white;
 	border-radius: 50%;
 	font-family: "Courier";
 	float:right;
 	width:250px;
 	height:250px;
+	
  }
 
 /*Number inside bubble*/
@@ -18,6 +19,7 @@ position:relative;
 	border-width:2px;
 	border-style:solid;
 	padding: 3px;
+
 	}
 /*paragraph at top of circle*/
 #b3 p {text-align: center;
@@ -43,6 +45,8 @@ position:absolute;
     transform-style: preserve-3d;
     transition: all 2.0s linear;
 	width:40%;
+	margin-left: 20px;
+	height: 110px;
 }
 #b3 #computer
 {
@@ -51,7 +55,7 @@ float:left;
 bottom:0px;
 left:10%;
 width: 80%;
-
+margin-left: 20px;
 }
 
 #b3 #front {
@@ -68,13 +72,18 @@ width:50%;
 
 /* back */
 #back {
-position:absolute;
-    background-color:red;
+	height: 100%;
+    position:absolute;
+    background-color:lightblue;
     transform:rotateY(180deg);
     backface-visibility: hidden;
 }
 
 /* paragraph */
-#back p { }
+#back p {
+font-family:verdana;
+margin: 10px;
+background-color: lightyellow;
+border-radius: 12px; }
 /* Right image */
 
