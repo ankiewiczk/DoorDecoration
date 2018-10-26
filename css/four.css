@@ -1,15 +1,103 @@
-.bubble4{
+body{
+	background: grey;
+}
+
+#bubble4{
+	width: 580px;
+	height: 370px;
+	background-image: url('images/bubble4background1.png');
+	background-color: white;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;  
+	padding-left: 10px;
+	padding-top: 10px;
+	border-radius: 5%;
+}
+#bubble4 i.numbered {
+	padding: 0 2px 0 3px;
+	border: 1px solid red;
+	border-radius: 50%;
+	float: left;
+}
+
+#bubble4 h3{
+	margin-left: 1.2em;
+	margin-top: 0;
+}
+
+#bubble4 button{
+	float: right;
+	margin-right: 5%;
+}
+
+#bubble4 blockquote {
+	position:relative;
+    background:#b2ff00;
+    border-radius: 10px;
+	border: 1em solid #b2ff00;
+	width: 20%;
+	top: 200px;
+	text-align: center;
+	margin-top: 40px;
+}
+
+#bubble4 blockquote::after{
+	content:"";
+	position:absolute;
+	left:70%;   
+	width: 0;
+	height: 0;
+	border-width:50px 20px 0;
+	bottom:-50px;
+	border-style: solid;
+	border-color: #b2ff00 transparent;
+	border-left: 0;
+	border-bottom: 0;
 	
 }
 
-blockquote {
-	
+#bubble4 #flap{
+	width: 286px;
+	height: 280px;
+	position:absolute;
+	top: 89.5px;
+	left: 24px;
+	transform-origin: 50% 100% 0;
+    transform-style: preserve-3d;
+    transition: all 2.0s linear;
 }
 
-.flapfront{
-	
+#bubble4 .flapfront{
+	background-image: url('images/flapfront.png');
+	width: 286px;
+	height: 280px;
+	position:absolute;
+	background-color: white;
+	backface-visibility: hidden;
 }
 
-.flapback{
-	
+#bubble4 p{
+	width: 33%;
+	left: 10em;
+	top: 1em;
+	position:absolute;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	text-shadow: -1px -1px 0 #000,
+				  1px -1px 0 #000,
+				 -1px 1px 0 #000,
+				  1px 1px 0 #000;
+}
+
+#bubble4 .flapback{
+	background-image: url('images/flapback.png');
+	width: 286px;
+	height: 280px;
+	position:absolute;
+	left: -2px;
+	transform:rotateX(180deg);
+    backface-visibility: hidden;
+	background-color: white;
 }
