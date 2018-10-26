@@ -1,35 +1,82 @@
 /*Worked on by Jrobles*/
 /* whole bubble */
-#bubble1 {
+div#bubble1 {
+	border-radius: 2em;
+    float:left;
+    width:30%;
+    margin:2%;
+    background-color:black;
+	padding: 20px;
+	color: white;
+	position: absolute;
 	
 }
-
 
 /* Power button pic div */
-#bubble1 div#powerButton {
-border-radius: 50%;
+
+#bubble1 img#powerButton {
+	border-radius: 50%;
+    border-color: #258e8e ;
+	border-width: 10px;
+	border-style: solid;
+	width: 25%;
+	display: inline;
+	float: left;
+	clear: none;
+	position: relative;
+	right: 7%;
+	top: -50px;
 }
+	
+	
+	
 
-/* ON text */
-.onText{
-	float: right;
+
+/* top right info bubble */
+
+#bubble1 i { 
+	border-color: orange;
+	border-width: 3px;
+	border-style: solid;
+	border-radius: 50%;
+	background: white;
+	width: 35px;
+	color: black;
+	font-size: 30px;
+	float: left; 
+	position: relative;
+	clear: none;
+
 }
-
-
-/* #1 bubble */
-i#num1 {
+#bubble1 .onText{
+	font-size: 25px;
+	text-align: center;
+	position:relative;
+	clear: none; 
+	display: inline;
 	
 	
 }
 
-
-/* before the pop up */
-#beforePop {
+/* what it looks w/ no pop up */
+#bubble1 #noPop {                             
 	
 }
+
+
+
+/*comp wakes up text */
+#bubble1 .wakeText{
+
+}
+
+
+
 
 /* after the pop up the TOP part is a div fill with text */
 #topPop {
+	background: cornflowerblue;
+	color: black;
 	
 }
 
