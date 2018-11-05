@@ -1,44 +1,39 @@
-	<!DOCTYPE html>
-	<html>
-	<head>
-			<link rel="stylesheet" href="css/bubble1.css" type="text/css">
-	</head>
-	<body>
-		
-		<!-- the container -->
-		<div id="bubble1">
-			
-			<!-- pic of the PB -->
-			<div id=powerButton><img id=powerButton src="Assets/pressingPB.png" alt="corner power button"></div>
-			
-		<!--the top right info part -->
-			<p class="onText"><i class="inline">1.</i>You press the ON button and power flows into the computer's circuits.</p>
-			
-			
-		<!--BEFORE the POP -->
-			<div id="noPop"><img src="" alt="sleep boi"></div>
+<!DOCTYPE html>
+<html>
+<head>
+		<link rel="stylesheet" href="css/bubble1.css" type="text/css">
+		<script src="bubble1js.js" ></script>
+</head>
+<body>
 	
-			
+	<!-- the container -->
+	<div id="bubble1">
+		
+		<!-- pic of the PB -->
+		<div id="powerButton"><img src="Assets/pressingPB.png" alt="corner power button"></div>
+		
+		<!--the top right info part -->
+		<p class="onText"><i class="inline">1.</i>You press the ON button and power flows into the computer's circuits.</p>
+		
+		<!--BEFORE the POP -->
+		<div id="sleep">
+			<img src="" alt="wake boi"/> 		
+		</div>
 	
 		<!-- the two parts og the POP UP -->		
-			<div>
-		
-		<!--TOP PART (only text part) -->
-			<div id=topPop>
-	
-			<p class="wakeText"> The computer wakes up.</p>		
-	
+		<div id="popup">
+			<!--TOP PART (only text part) -->
+			<div id=topPop>	
+				<img src="" alt="sleep boi"/>		
+			</div>	
+			<!-- the bottom part where CPU is awake -->
+			<div id=bottomPop>
+				<p class="wakeText"> The computer wakes up.</p>	
 			</div>
-		
-	
-	<!-- the bottom part where CPU is awake -->
-		<div id=bottomPop>
-				<img src="" alt="wake boi"> 
 		</div>
-			</div>
+		</br> <button id="Bubble1switch">flip here</button>
 		
-
 	</div>
-		<!-- end of container -->
-	</body>
-	</html>
+	<!-- end of container -->
+</body>
+</html>

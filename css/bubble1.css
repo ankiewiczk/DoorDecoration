@@ -13,13 +13,18 @@ div#bubble1 {
 }
 
 /* Power button pic div */
+#bubble1 #powerButton {
+	width:30%;
+}
 
-#bubble1 img#powerButton {
+
+/*image inside powerbutton div*/
+#bubble1 #powerButton img {
 	border-radius: 50%;
     border-color: #258e8e ;
 	border-width: 10px;
 	border-style: solid;
-	width: 25%;
+	width: 100%;
 	display: inline;
 	float: left;
 	clear: none;
@@ -65,10 +70,6 @@ div#bubble1 {
 
 
 
-/*comp wakes up text */
-#bubble1 .wakeText{
-
-}
 
 
 
@@ -77,11 +78,27 @@ div#bubble1 {
 #topPop {
 	background: cornflowerblue;
 	color: black;
-	
+  backface-visibility: hidden;
 }
 
 /* the bottom pop part */
 
 #bottomPop{
-	
+    transform:rotateX(180deg);
+    backface-visibility: hidden;	
+}
+/* switch button*/
+
+
+/*comp wakes up text */
+#bubble1 .wakeText{
+
+}
+#popup {
+ /* first  value controls where y axis is.
+       second value controls where x axis is.*/
+    transform-origin: top center 0;
+    transform-style: preserve-3d;
+    transition: all 2.0s linear;
+
 }
