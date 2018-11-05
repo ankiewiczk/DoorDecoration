@@ -2,10 +2,10 @@ body{
 	background: grey;
 }
 
-#bubble4{
+div#bubble4{
 	width: 580px;
 	height: 370px;
-	background-image: url('images/bubble4background1.png');
+	background-image: url('../images/bubble4background1.png');
 	background-color: white;
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
@@ -13,6 +13,7 @@ body{
 	padding-left: 10px;
 	padding-top: 10px;
 	border-radius: 5%;
+	position: relative;
 }
 #bubble4 i.numbered {
 	padding: 0 2px 0 3px;
@@ -61,20 +62,21 @@ body{
 	width: 286px;
 	height: 280px;
 	position:absolute;
-	top: 89.5px;
-	left: 24px;
-	transform-origin: 50% 100% 0;
+	top: 49px;
+	left:-16px;
+	transform-origin: 50% 106% 0;
     transform-style: preserve-3d;
     transition: all 2.0s linear;
 }
 
 #bubble4 .flapfront{
-	background-image: url('images/flapfront.png');
+	background-image: url('../images/flapfront.png');
 	width: 286px;
 	height: 280px;
 	position:absolute;
 	background-color: white;
 	backface-visibility: hidden;
+	margin- none;
 }
 
 #bubble4 p{
@@ -92,7 +94,7 @@ body{
 }
 
 #bubble4 .flapback{
-	background-image: url('images/flapback.png');
+	background-image: url('../images/flapback.png');
 	width: 286px;
 	height: 280px;
 	position:absolute;
@@ -100,4 +102,5 @@ body{
 	transform:rotateX(180deg);
     backface-visibility: hidden;
 	background-color: white;
+	margin: none;
 }
