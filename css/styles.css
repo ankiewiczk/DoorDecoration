@@ -4,8 +4,7 @@ body {
     height:100%;
 }
 div { 
-   min-height:200px;
-   min-width: 200px;
+
    border-radius:1em;
    margin:1em;
    box-sizing:border-box;

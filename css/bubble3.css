@@ -9,7 +9,8 @@ position:relative;
 	float:right;
 	width:250px;
 	height:250px;
-	
+	min-width:0px;
+	min-height:0px;
  }
 
 /*Number inside bubble*/
@@ -38,32 +39,38 @@ background-color: #4CAF50;
 
 }
 #b3 #b3flap {
-position:absolute;
+	position:absolute;
     /* first  value controls where y axis is.
        second value controls where x axis is.*/
-    transform-origin: right center 0;
+    transform-origin: 110% center 0;
     transform-style: preserve-3d;
     transition: all 2.0s linear;
 	width:40%;
-	margin-left: 20px;
-	height: 110px;
+	margin: 0px;
 }
+
+
 #b3 #computer
 {
 clear:both;
 float:left;
-bottom:0px;
 left:10%;
 width: 80%;
-margin-left: 20px;
+/*margin-left: 20px; */
 }
 
-#b3 #front {
-position:absolute;
+#b3 #front3 {
+	position:absolute;
     background-color:green;
 	backface-visibility: hidden;
+
 }
-	
+
+#front3 img{
+	width: 90px;
+	height: 98px;
+}
+
 /*Left Image*/
 #b3 div .left, #b3 div .right { 
 float: left;
@@ -71,20 +78,22 @@ width:50%;
 }
 
 /* back */
-#b3 #back {
-	height: 100%;
-    position:absolute;
+#b3 #back3 {
+	height          : 100%;
+    position        : absolute;
     background-color:lightblue;
-    transform:rotateY(180deg);
+    transform: rotateY(180deg);
     backface-visibility: hidden;
+
 }
 
 /* paragraph */
-#b3 #back p {
+#b3 #back3 p {
 font-family:verdana;
-margin: 10px;
 background-color: lightyellow;
-border-radius: 12px; }
+border-radius: 12px;
+border: 10px solid lightblue; }
+
 /* Right image */
 
 
