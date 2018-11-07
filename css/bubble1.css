@@ -68,7 +68,11 @@ div#bubble1 {
 	
 }
 
-
+#bubble1 #sleep{
+	width: 65%;
+		height: 250px;
+	
+}
 
 
 
@@ -76,12 +80,25 @@ div#bubble1 {
 
 /* after the pop up the TOP part is a div fill with text */
 #topPop {
+	position: relative;
+	float: right;
+	width: 65%;
+	height: 100px;
 	background: cornflowerblue;
+	text-align: center;
+	font-size: 20px;
 	color: black;
-  backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
 /* the bottom pop part */
+#bubble1 #wake {
+	position: relative;
+	float: right;
+	width: 350px;
+	height: 250px;
+}
+
 
 #bottomPop{
     transform:rotateX(180deg);
@@ -91,7 +108,8 @@ div#bubble1 {
 
 
 /*comp wakes up text */
-#bubble1 .wakeText{
+#bubble1 .wakeText{ 
+	
 
 }
 #popup {
