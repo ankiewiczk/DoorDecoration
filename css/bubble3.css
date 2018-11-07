@@ -71,7 +71,7 @@ width:50%;
 }
 
 /* back */
-#back {
+#b3 #back {
 	height: 100%;
     position:absolute;
     background-color:lightblue;
@@ -80,10 +80,11 @@ width:50%;
 }
 
 /* paragraph */
-#back p {
+#b3 #back p {
 font-family:verdana;
 margin: 10px;
 background-color: lightyellow;
 border-radius: 12px; }
 /* Right image */
+
 
