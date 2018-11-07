@@ -1,13 +1,13 @@
 window.addEventListener("load", loadBubble4);
 
 function loadBubble4(e) {
-    var switchEL = document.getElementById("flipswitch");
-    switchEL.onclick = flipIt;
+    var switchEL = document.getElementById("switch4");
+    switchEL.onclick = flipIt4;
     var panelEL = document.getElementById("flap");
     panelEL.flipped = false;
 }
 
-function flipIt(e) { 
+function flipIt4(e) { 
     var panelEL = document.getElementById("flap");
 
     if(!panelEL.flipped)  

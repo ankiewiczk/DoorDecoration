@@ -1,7 +1,7 @@
 window.onload = loadDocument;
 
 function loadDocument(e) {
-    var switchEL = document.getElementById("flipswitch");
+    var switchEL = document.getElementById("fliploner");
     switchEL.onclick = flipIt;
     var panelEL = document.getElementById("flip");
     panelEL.flipped = false;

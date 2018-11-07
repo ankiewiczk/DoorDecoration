@@ -34,7 +34,7 @@
   border-color:#faf98a transparent;
 }
 
-#flip {
+#main #fliploner {
 	position:absolute;
     transform-origin: center bottom 0;
     transform-style: preserve-3d;
