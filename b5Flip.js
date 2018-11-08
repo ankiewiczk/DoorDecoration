@@ -29,7 +29,7 @@ function flipRobot(e) {
     var panelEL = document.getElementById("bookFlap");
 
     if(!panelEL.flipped)  
-    {    panelEL.style.transform = "rotateX(180deg)";
+    {    panelEL.style.transform = "rotateY(180deg)";
         panelEL.flipped = true;
     } else { 
         panelEL.style.transform = "";
