@@ -5,6 +5,13 @@ div {
     border-radius:5px;
 }
 
+#CpuModel {
+    position: absolute;
+    width: 450px;
+    height: 250px;
+    z-index: 2;
+}
+
 #flipPanel {
     position:absolute;
     margin-left: 200px;
