@@ -9,12 +9,12 @@ div#bubble1 {
 	padding: 20px;
 	color: white;
 	position: absolute;
-	
 }
 
 /* Power button pic div */
 #bubble1 #powerButton {
 	width:30%;
+	float:left;
 }
 
 
@@ -32,11 +32,6 @@ div#bubble1 {
 	right: 7%;
 	top: -50px;
 }
-	
-	
-	
-
-
 /* top right info bubble */
 
 #bubble1 i { 
@@ -51,6 +46,7 @@ div#bubble1 {
 	float: left; 
 	position: relative;
 	clear: none;
+	text-align:center;
 
 }
 #bubble1 .onText{
@@ -59,31 +55,21 @@ div#bubble1 {
 	position:relative;
 	clear: none; 
 	display: inline;
-	
-	
-}
-
-/* what it looks w/ no pop up */
-#bubble1 #noPop {                             
-	
 }
 
 #bubble1 #sleep{
 	width: 65%;
-		height: 250px;
-	
+		height: 250px;	
 }
 
-
-
-
-
+#Bubble1switch {
+	float:left;
+	clear: left;
+}
 /* after the pop up the TOP part is a div fill with text */
 #topPop {
-	position: relative;
-	float: right;
-	width: 65%;
-	height: 100px;
+	position: absolute;
+	width: 100%;
 	background: cornflowerblue;
 	text-align: center;
 	font-size: 20px;
@@ -93,8 +79,10 @@ div#bubble1 {
 
 /* the bottom pop part */
 #bubble1 #wake {
-	position: relative;
-	float: right;
+	position: absolute;
+	display:block;
+	top:0;
+	left:0;
 	width: 350px;
 	height: 250px;
 }
@@ -114,9 +102,18 @@ div#bubble1 {
 }
 #popup {
  /* first  value controls where y axis is.
-       second value controls where x axis is.*/
+       second value controls where x axis is.*/  
     transform-origin: top center 0;
     transform-style: preserve-3d;
     transition: all 2.0s linear;
-
+	position: absolute;
+	width:100%;
+	right:0;
+	top:0;
+}	
+#popupcontainer{
+width:70%;
+height:280px;;
+position:relative;
+float:right;
 }
