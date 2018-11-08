@@ -46,9 +46,9 @@ img {
     transform:rotateX(180deg);
 } 
 
-#ThirdPart {
+#thirdPart {
     position: absolute;
-    background-color: #fff;
+    background-color: blue;
 }
 
 body {
