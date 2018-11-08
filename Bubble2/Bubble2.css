@@ -6,6 +6,12 @@ div {
     border-radius:1em;
 }
 
+#CpuModel {
+    position: absolute;
+    width: 450px;
+    height: 250px;
+}
+
 #flipPanel {
     position:absolute;
     /* first  value controls where y axis is.
