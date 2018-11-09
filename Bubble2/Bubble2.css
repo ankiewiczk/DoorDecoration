@@ -12,6 +12,7 @@ div {
     height: 250px;
 }
 
+
 #flipPanel {
     position:absolute;
     /* first  value controls where y axis is.
@@ -20,6 +21,8 @@ div {
     transform-style: preserve-3d;
     transition: all 2.0s linear;
     padding: 0;
+    
+    
 }
 .circle {
     border-radius: 50%;
@@ -50,13 +53,21 @@ img {
     position:absolute;
     background-color: #fff;
     transform:rotateX(180deg);
+    background-image:url("img/BottomPart.png");
+     background-repeat: no-repeat;
+     background-position-x: -6px; 
 } 
+
 
 #ThirdPart {
     position: absolute;
     background-color: #fff;
+    background-image:url(img/Thirdpart2.PNG),url(img/OperatingSystem.png);
+    background-repeat: no-repeat,no-repeat;
+    background-position-y:60px,70px; 
+    background-position-x:10px,right;
 }
-
+ 
 body {
     background-color: #00b8e6;
 }
