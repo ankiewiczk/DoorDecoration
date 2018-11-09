@@ -9,6 +9,7 @@ div#bubble1 {
 	padding: 20px;
 	color: white;
 	position: absolute;
+	min-height: 450px;
 }
 
 /* Power button pic div */
@@ -58,8 +59,9 @@ div#bubble1 {
 }
 
 #bubble1 #sleep{
-	width: 65%;
-		height: 250px;	
+	width: 50%;
+	right: 25%;
+		
 }
 
 #Bubble1switch {
@@ -69,9 +71,6 @@ div#bubble1 {
 /* after the pop up the TOP part is a div fill with text */
 #topPop {
 	position: absolute;
-	width: 100%;
-	background: cornflowerblue;
-	text-align: center;
 	font-size: 20px;
 	color: black;
 	backface-visibility: hidden;
@@ -83,12 +82,13 @@ div#bubble1 {
 	display:block;
 	top:0;
 	left:0;
-	width: 350px;
-	height: 250px;
+	width: 50%;
+	
 }
 
 
 #bottomPop{
+	min-width: 750px;
     transform:rotateX(180deg);
     backface-visibility: hidden;	
 }
@@ -97,6 +97,13 @@ div#bubble1 {
 
 /*comp wakes up text */
 #bubble1 .wakeText{ 
+	background: cornflowerblue;
+	color: black;
+	text-align: center;
+	font-size: 20px;
+	width: 25%;
+	
+	
 	
 
 }
@@ -112,6 +119,7 @@ div#bubble1 {
 	top:0;
 }	
 #popupcontainer{
+min-width: 350px;
 width:70%;
 height:280px;;
 position:relative;
