@@ -1,0 +1,99 @@
+/*Overall bubble*/
+#b3 {
+position:relative;
+	padding: 5px;
+	border: 8px solid green;
+	background-color: white;
+	border-radius: 50%;
+	font-family: "Courier";
+	float:right;
+	width:250px;
+	height:250px;
+	min-width:0px;
+	min-height:0px;
+ }
+
+/*Number inside bubble*/
+#b3 i {border-radius: 50%; 
+	background-color:white;
+	border-color: pink;
+	border-width:2px;
+	border-style:solid;
+	padding: 3px;
+
+	}
+/*paragraph at top of circle*/
+#b3 p {text-align: center;
+margin:auto; }
+
+/*button*/
+#b3 button { 
+border-radius: 50%;
+background-color: #4CAF50; 
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+	display:block;
+ clear:both;
+
+}
+#b3 #b3flap {
+	position:absolute;
+    /* first  value controls where y axis is.
+       second value controls where x axis is.*/
+    transform-origin: 110% center 0;
+    transform-style: preserve-3d;
+    transition: all 2.0s linear;
+	width:40%;
+	margin: 0px;
+}
+
+
+#b3 #computer
+{
+clear:both;
+float:left;
+left:10%;
+width: 80%;
+/*margin-left: 20px; */
+}
+
+#b3 #front3 {
+	position:absolute;
+    background-color:green;
+	backface-visibility: hidden;
+
+}
+
+#front3 img{
+	width: 90px;
+	height: 98px;
+}
+
+/*Left Image*/
+#b3 div .left, #b3 div .right { 
+float: left;
+width:50%;
+}
+
+/* back */
+#b3 #back3 {
+	height          : 100%;
+    position        : absolute;
+    background-color:lightblue;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+
+}
+
+/* paragraph */
+#b3 #back3 p {
+font-family:verdana;
+background-color: lightyellow;
+border-radius: 12px;
+border: 10px solid lightblue; }
+
+/* Right image */
+
+

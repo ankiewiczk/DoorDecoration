@@ -12,8 +12,10 @@
 	<link rel="stylesheet" href="css/bubble4.css">
 	<link rel="stylesheet" href="css/bubble5.css">
 	<link rel="stylesheet" href="css/bubble6.css">
-	<link rel="stylesheet" href="css/robotinsert.css">
-	<link rel="stylesheet" href="css/sidebar.css">
+	<link rel="stylesheet" href="css/lonerbubble.css">
+	<link rel="stylesheet" href="css/sidebar.css"> <!-- -->
+	<script src="js/flip.js"></script>
+	<script src="js/flip4.js"></script> 
 </head>
 <body>
 	<h1>How it all works</h1>
@@ -25,22 +27,73 @@
     <div id="bubble2">
      <i class="numbered"> 2. </i>
     </div>
-    <div id="bubble3">
-     <i class="numbered"> 3. </i>
-    </div>
+
+    <div id="b3">
+		<!--At the top of the circle-->
+		<p>	<i>3.</i>
+		  You click <br>
+		    on an icon to <br>
+		   open an app.</p>
+	<button id="buttonb3"> flip</button>
+	<!--At the botton of the circle-->
+	<div id="computer">
+		<img class= "left" src="cube.jpg" alt="Left Waiting Computer">
+		<img class="right" src="cube.jpg" alt="Right Computer">
+	</div>
+	<div id="b3flap">
+		<div id="back3">
+			<p>This takes a moment . . . </p>
+		</div>
+		<div id="front3">
+			<img src="cube.jpg" alt="left clicking computer">
+		</div>
+	</div>
+</div>
+	
     <div id="bubble4">
-     <i class="numbered"> 4. </i>
+		<button id="switch4">Flip Flap</button>
+		<i class="numbered"> 4. </i>
+		<h3>The computer finds the app and loads it up</h3>
+		<blockquote>
+			"I'm ready!"
+		</blockquote>
+		<div id="flap">
+			<div class="flapfront">
+				<p>Apps are kept on the storage drive</p>
+			</div>
+			<div class="flapback"></div>
+		</div>
     </div>
+	
     <div id="bottomhalf"> <!-- bottom half of page-->
         <div id="bubble5">
             <i class="numbered"> 5. </i>
         </div>
-            <div id="bottomsidebar">Processing is done by the computer chips</div>        
+        <div id="bottomsidebar">
+            Processing is done by the computer chips
+        </div>
         <div id="bubble6container">
             <div id="bubble6">
                 <i class="numbered"> 6. </i>
             </div>
-            <div id="robotinsert">robot insert</div>
+            <div id="robotinsert">
+				<button id="fliploner">Flip here</button>
+		        <div id="main">
+                    <p> Writing instructions for computer is known as <b>coding</b>
+                    <br><br><br>
+                    Turn the page to find out more....
+                    </p>
+                    <img id="robot1" src="images/robot1.png">
+                    <div id="flip">
+                        <div id="front">
+                            <p>It all works smoothly as long as the computer has the right instructions.</p>
+                        </div>
+                        <div id="back">
+                            <img id="robot2" src="images/robot2.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
