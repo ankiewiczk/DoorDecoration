@@ -2,11 +2,11 @@
 window.addEventListener("load",loadDocument);
 
 function loadDocument(e) {
-    var switchEL = document.getElementById("bookButton");
+    var switchEL = document.getElementById("robotButton");
     switchEL.onclick = flipBook;
     var panelEL = document.getElementById("robotFlap");
     panelEL.flipped = false;
-        var switchEL = document.getElementById("robotButton");
+        var switchEL = document.getElementById("bookButton");
     switchEL.onclick = flipRobot;
     var panelEL = document.getElementById("bookFlap");
     panelEL.flipped = false;
