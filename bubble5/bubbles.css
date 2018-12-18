@@ -1,0 +1,156 @@
+body {
+    background-color:mediumaquamarine;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+#bubble5 {
+    position:relative;
+    background-color: white;
+    min-width: 400px;
+    min-height:375px;
+    border: 3px solid blue;
+    padding: 12px;
+    border-radius: 20px;
+}
+/* help me*/
+
+#bubble5 #robotContainer {
+    position: relative;
+    background-image: url("../srobot.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    float:left;
+    clear:left;
+    width:200px;
+    min-height:200px;
+    overflow: visible;
+}
+
+#bubble5 #robotContainer img {
+    position:absolute;
+    max-width:175px;
+}
+#bubble5 #robotFlap {
+    position:absolute;
+    background-color:white;
+    transform-style: preserve-3d;
+    transform-origin: left top 0;
+    transition-property: transform;
+    transition-timing-function: linear;
+    transition-duration: 2s;
+    width:100%;
+    height:100%;
+    z-index:1;
+}
+
+#bubble5 #over {
+    backface-visibility: hidden;
+}
+
+#bubble5 #under {
+    text-align:center;
+    margin:auto;
+    transform:rotateX(180deg);
+    backface-visibility: hidden;
+    position:absolute;
+    width:100%;
+    bottom:0;
+    left:0;
+ 
+}
+
+#bookButton {
+    float:right;
+    clear:right;
+    
+}
+
+#bubble5 #book {
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:350px;
+    height:155px;
+    
+}
+
+#bubble5 #robotButton{
+    float: left;
+}
+
+#bubble5 #book img,#bubble5 #book p {
+    float:left;
+    clear:left;
+    max-width:170px;
+} 
+
+#bubble5 #book ol {
+    position:absolute;
+    top:0;
+    right:0;
+    max-width:170px;
+    box-sizing: border-box;
+}
+
+#bubble5 #bookFlap {
+    width:175px;
+    height:155px;
+    transform-origin: left top 0;
+    transition-property: transform;
+    transition-timing-function: linear;
+    transition-duration: 2s;
+    transform-style: preserve-3d;
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+
+  
+#bubble5 #front { 
+    height:100%;
+    position:absolute;
+    background-color: white;
+    backface-visibility: hidden;
+}
+
+#bubble5 #back {
+    width:100%;
+    height:100%;
+    text-align: center;
+    position:absolute;
+    backface-visibility: hidden;
+    background-color: white;
+    transform: rotateY(180deg);
+}
+
+
+#bubble5 .numbered {
+    border-radius: 50%;
+    border: 2px solid red;
+    
+}
+
+#bubble5 p { max-width: 150px;}
+
+#bubble5 > p:nth-of-type(1) {
+    float: left;
+}
+
+#bubble5 > p:nth-of-type(2) {
+    float: right;
+}
+
+#bubble5 > p:nth-of-type(3) {
+    float: right;
+    clear:right;
+}
+
+
+/*for debugging purposes*/
+div { border:1px solid black;
+}
