@@ -75,19 +75,29 @@ img {
     bottom:0;
     right:0;
     width:350px;
-    height:155px;
-    
+    height:155px;   
+}
+
+#bubble5 #book img {
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+#book p {
+    position:absolute;
+    margin-left: 10%;
+}
+#book #cake {
+    position:absolute;
+    top:50%;
+    left:10%;
+    width: 40%;
 }
 
 #bubble5 #robotButton{
     float: left;
 }
-
-#bubble5 #book img,#bubble5 #book p {
-    float:left;
-    clear:left;
-    max-width:170px;
-} 
 
 #bubble5 #book ol {
     position:absolute;
@@ -110,7 +120,18 @@ img {
     right:0;
 }
 
-  
+
+#front img. #back img {
+    position: absolute;
+    width:175px;
+}
+
+
+#bookFlap ol, #bookFlap p {
+    position:absolute;
+    top:0;
+    left:0;
+}
 #bubble5 #front { 
     height:100%;
     position:absolute;
