@@ -1,40 +1,134 @@
-
+/*Worked on by Jrobles*/
 /* whole bubble */
-.container{
-	
+div#bubble1 {
+	border-radius: 2em;
+    float:left;
+    width:50%;
+    margin:2%;
+    background-color:black;
+	padding: 20px;
+	color: white;
+	position: absolute;
+	min-height: 450px;
 }
-
 
 /* Power button pic div */
-div#powerButton {
-border-radius: 50%;
-}
-
-/* ON text */
-.onText{
-	float: right;
+#bubble1 #powerButton {
+	width:30%;
+	float:left;
 }
 
 
-/* #1 bubble */
-.num1 {
-	
-	
+/*image inside powerbutton div*/
+#bubble1 #powerButton img {
+	border-radius: 50%;
+    border-color: #258e8e ;
+	border-width: 10px;
+	border-style: solid;
+	width: 100%;
+	display: inline;
+	float: left;
+	clear: none;
+	position: relative;
+	right: 7%;
+	top: -50px;
+}
+/* top right info bubble */
+
+#bubble1 i { 
+	border-color: orange;
+	border-width: 3px;
+	border-style: solid;
+	border-radius: 50%;
+	background: white;
+	width: 35px;
+	color: black;
+	font-size: 30px;
+	float: left; 
+	position: relative;
+	clear: none;
+	text-align:center;
+
+}
+#bubble1 .onText{
+	font-size: 25px;
+	text-align: center;
+	position:relative;
+	clear: none; 
+	display: inline;
 }
 
-
-/* before the pop up */
-#beforePop {
-	
+#bubble1 #sleep{
+	width: 50%;
+	right: 25%;
+		
 }
 
+#Bubble1switch {
+	float:left;
+	clear: left;
+}
 /* after the pop up the TOP part is a div fill with text */
 #topPop {
-	
+	position: absolute;
+	font-size: 20px;
+	color: black;
+	backface-visibility: hidden;
+	margin: 0;
+	min-height: 0;
 }
 
 /* the bottom pop part */
+#bubble1 #wake {
+	position: absolute;
+	display:block;
+	top:0;
+	left:0;
+	width: 50%;
+	
+}
+
 
 #bottomPop{
+	min-width: 750px;
+    transform:rotateX(180deg);
+    backface-visibility: hidden;
+	min-height: 0;
+    margin: 0;
+}
+/* switch button*/
+
+
+/*comp wakes up text */
+#bubble1 .wakeText{ 
+	background: cornflowerblue;
+	color: black;
+	text-align: center;
+	font-size: 20px;
+	width: 30%;
+	margin: 0;
 	
+	
+	
+
+}
+#popup {
+ /* first  value controls where y axis is.
+       second value controls where x axis is.*/  
+    transform-origin: top center 0;
+    transform-style: preserve-3d;
+    transition: all 2.0s linear;
+	position: absolute;
+	width:100%;
+	right:0;
+	top:0;
+	margin: 0;
+	min-height: 0;
+}	
+#popupcontainer{
+min-width: 350px;
+width:70%;
+height:280px;;
+position:relative;
+float:right;
 }

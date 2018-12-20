@@ -66,16 +66,17 @@ width: 80%;
 
 }
 
-#front3 img{
-	width: 90px;
-	height: 98px;
+/*Left Image*/
+#b3 div .bgimage { 
+float: left;
+width:100%;
+}
+#b3 div .left { 
+float: left;
+width:140%;
 }
 
-/*Left Image*/
-#b3 div .left, #b3 div .right { 
-float: left;
-width:50%;
-}
+
 
 /* back */
 #b3 #back3 {
@@ -84,7 +85,7 @@ width:50%;
     background-color:lightblue;
     transform: rotateY(180deg);
     backface-visibility: hidden;
-
+	
 }
 
 /* paragraph */

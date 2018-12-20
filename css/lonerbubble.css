@@ -6,7 +6,8 @@
     border-radius:25px;
 	line-height: 200px;
 	text-align: center;
-	  }
+    box-sizing:content-box;
+}
 
 
 #main p {				
@@ -34,9 +35,9 @@
   border-color:#faf98a transparent;
 }
 
-#main #fliploner {
+#main #flip {
 	position:absolute;
-    transform-origin: center bottom 0;
+    transform-origin: center 130% 0;
     transform-style: preserve-3d;
     transition: all 2.0s linear;
 	height: 150px;
@@ -44,6 +45,7 @@
 	top:0px;
 	margin:0px;
 }
+
 
 #front { 
     position:absolute;

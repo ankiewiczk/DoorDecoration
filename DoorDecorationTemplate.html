@@ -12,18 +12,47 @@
 	<link rel="stylesheet" href="css/bubble4.css">
 	<link rel="stylesheet" href="css/bubble5.css">
 	<link rel="stylesheet" href="css/bubble6.css">
+
 	<link rel="stylesheet" href="css/lonerbubble.css">
 	<link rel="stylesheet" href="css/sidebar.css"> <!-- -->
+
 	<script src="js/flip.js"></script>
-	<script src="js/flip4.js"></script> 
+	<script src="js/flip4.js"></script>
+	<script src="js/bubble1js.js" ></script>
 </head>
 <body>
 	<h1>How it all works</h1>
     <p>Here's what happens when you turn on a computer</p>
 <!--    <div id="talkingrobot"></div>-->
-    <div id="bubble1">
-        <i class="numbered"> 1. </i>
-    </div>
+    <!-- the container -->
+	<div id="bubble1">
+		
+		<!-- pic of the PB -->
+		<div id="powerButton"><img src="Assets/pressingPB.png" alt="corner power button"></div>
+		
+		<!--the top right info part -->
+		<i class="inline">1.</i>
+		<p class="onText">You press the ON button and power flows into the computer's circuits.</p>
+		
+		<!--BEFORE the POP -->
+		
+			
+		<br> <button id="Bubble1switch">flip here</button>
+	<div id="popupcontainer">
+		<img src="awakecpu.png" alt="wake boi" id="wake" /><!-- the two parts og the POP UP -->		
+		<div id="popup">
+			<!--TOP PART (only text part) -->
+			<div id=topPop>	
+				<img src="sleepcpu.png" alt="sleep boi" id="sleep"  />
+			</div>	
+			<!-- the bottom part where CPU is awake -->
+			<div id=bottomPop>
+			    <p class="wakeText"> The computer wakes up.</p>		
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- end of container -->
     <div id="bubble2">
      <i class="numbered"> 2. </i>
     </div>
@@ -37,15 +66,14 @@
 	<button id="buttonb3"> flip</button>
 	<!--At the botton of the circle-->
 	<div id="computer">
-		<img class= "left" src="cube.jpg" alt="Left Waiting Computer">
-		<img class="right" src="cube.jpg" alt="Right Computer">
+		<img class= "bgimage" src="ComputerB31.PNG" alt="Left Waiting Computer">
 	</div>
 	<div id="b3flap">
 		<div id="back3">
 			<p>This takes a moment . . . </p>
 		</div>
 		<div id="front3">
-			<img src="cube.jpg" alt="left clicking computer">
+			<img class="left" src="ComputerB3.PNG" alt="left clicking computer">
 		</div>
 	</div>
 </div>
@@ -80,7 +108,7 @@
 				<button id="fliploner">Flip here</button>
 		        <div id="main">
                     <p> Writing instructions for computer is known as <b>coding</b>
-                    <br><br><br>
+                    <br>
                     Turn the page to find out more....
                     </p>
                     <img id="robot1" src="images/robot1.png">
