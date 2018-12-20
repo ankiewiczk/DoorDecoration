@@ -1,0 +1,142 @@
+div {
+    box-sizing: border-box;
+    padding:10px;
+    width:300px;
+    height:300px;
+    border-radius:1em;
+}
+
+#CpuModel {
+    position: absolute;
+    width: 450px;
+    height: 250px;
+}
+
+
+#flipPanel {
+    position:absolute;
+    /* first  value controls where y axis is.
+       second value controls where x axis is.*/
+    transform-origin: left bottom 0;
+    transform-style: preserve-3d;
+    transition: all 2.0s linear;
+    padding: 0;
+    
+    
+}
+.circle {
+    border-radius: 50%;
+    border-color:red;
+    border-style:solid;
+    border-width:2px;
+    padding:4px;
+}
+
+#CPU{
+    position: absolute;
+    left: 50%;
+
+}
+
+img { 
+    min-width:50px;
+    min-height:50px; 
+}
+
+#frontPart { 
+    backface-visibility: hidden;
+    position:absolute;
+    background-color: #fff;}
+
+#backPart { 
+    backface-visibility: hidden;
+    position:absolute;
+    background-color: #fff;
+    transform:rotateX(180deg);
+    background-image:url("img/BottomPart.png");
+     background-repeat: no-repeat;
+     background-position-x: -6px; 
+} 
+
+#ThirdPart {
+    position: absolute;
+    background-color: #fff;
+    background-image:url(img/Thirdpart2.PNG),url(img/OperatingSystem.png);
+    background-repeat: no-repeat,no-repeat;
+    background-position-y:60px,70px; 
+    background-position-x:10px,right;
+}
+ 
+body {
+    background-color: #00b8e6;
+}
+
+.greenTalkingBubble.right {
+    margin-right: 40px;
+    background: #66cc00;
+}
+
+.greenTalkingBubble {
+    backface-visibility: hidden;
+    bottom: 30px;
+    width: 130px;
+    height: 70px;
+    position: relative;
+    padding: 5px;
+    margin: 1em 0 3em;
+    background: #66cc00;
+    border-radius: 10px;
+    z-index:2;
+    top: 10%;
+}
+/*
+.greenTalkingBubble:after {
+    content: "";
+    position: absolute;
+    bottom: 60px;
+    left: 134px;
+    border-width: 20px 0 0 20px;
+    border-style: solid;
+    border-color: #66cc00 transparent;
+    display: block;
+    width: 0;
+}
+/* */
+.greenTalkingBubble:before{
+    content: "";
+    position: absolute;
+    top:-15px;
+    right: 0px;
+    height: 15px;
+    border-right: 30px solid #66cc00;
+    border-top-left-radius: 50px 50px;
+    background: #66cc00;
+}
+/* */
+
+.greenTalkingBubble:after {
+    content: "";
+    position: absolute;
+    z-index:1;
+    right: -45px;
+    width: 30px;
+    height: 15px;
+    top: -15px;
+    background-color: #fff; 
+    border-top-left-radius: 40px 50px;
+    transform: translate(-30px, 0px);
+}
+
+#p3 {
+    position: relative;
+    bottom:  60px;
+    top: 0%;
+}
+
+#p4 {
+    position: absolute;
+    bottom: 0%;
+    left: 25%;
+    width: 50%;
+    text-align: center;
+}
